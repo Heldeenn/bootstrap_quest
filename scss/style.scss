@@ -1,0 +1,33 @@
+$main-ring-color: #e6d802;
+$title-ring-color: #e66602;
+$rings-color: #484848;
+
+.main-ring p,
+.title-ring p,
+.rings p {
+  margin: 50px;
+  font-size: 50px;
+}
+
+@mixin ring ($size, $color) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  box-shadow: $size/40 $size/40 lighten($color, 30);
+  border: $size/15 solid $color;
+}
+
+.the-ring {
+  @include ring(200px, $main-ring-color);
+}
+
+.precious-ring {
+  @include ring(70px, $title-ring-color);
+}
+
+$j: 10px;
+@for $i from 1 through 6 {
+  .ring-#{$i} { @include ring($j, $rings-color);
+  margin-right: -$j * 0.3; }
+    $j: $j * 1.5;
+}
