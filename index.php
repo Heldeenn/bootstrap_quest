@@ -8,24 +8,10 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">FindThePrecious.com</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#fellows">Fellows <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+<?php
+include 'header.php';
+?>
 
     <section class="carousel-section">
         <div class="bd-example">
@@ -157,43 +143,9 @@
         </div>
     </section>
 
-    <footer class="page-footer">
-        <div class="container-fluid text-center bg-dark">
-            <div class="row">
-                <div class="col-md-3 mb-md-0 mb-3 mt-2">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Fellows</a>
-                        </li>
-                        <li>
-                            <a href="#">Join our army</a>
-                        </li>
-                    </ul>
-                </div>
-                 <div class="col-md-3 mb-md-0 mb-3 mt-2">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Reward conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Legal mentions</a>
-                        </li>
-                    </ul>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="link-twitter col-md-6 mt-md-0 mt-3">
-                    <p class="mt-2"><a href="#">Sauron4Ever.com</a></p>
-                    <p>Follow him also on <a href="#">Twitter</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+<?php
+include 'footer.php';
+?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
